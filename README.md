@@ -1,5 +1,3 @@
 # Project
 
-Progress Bar classi observer + tests
-
-manca gui
+Aggiunta gui, lettura file, main e sistemato test
