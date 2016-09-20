@@ -3,9 +3,8 @@
 //
 
 #include "GuiDownloader.h"
-#include <iostream>
 
 void GuiDownloader::update() {
-//add code for window downloader
-    std::cout<<"uscita"<<std::endl;
+
+    window->updateBar(subject->getBytes());
 }

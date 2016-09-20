@@ -1,0 +1,1 @@
+secondo file per testare l'apertura e il calcolo dei bytes.

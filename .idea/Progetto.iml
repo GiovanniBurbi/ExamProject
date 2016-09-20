@@ -11,12 +11,16 @@
       <sourceFolder url="file://$MODULE_DIR$/test/DownloaderTest.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/runAllTests.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Downloader.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Observer.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/GuiDownloader.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/GuiDownloader.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Subject.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Downloader.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Window.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Observer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Downloader.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FrameProgetto.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FrameProgetto.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GuiDownloader.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Window.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GuiDownloader.h" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">

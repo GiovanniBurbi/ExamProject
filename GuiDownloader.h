@@ -8,12 +8,13 @@
 
 #include "Observer.h"
 #include "Downloader.h"
+#include "Window.h"
 
 class GuiDownloader : public Observer {
 
 public:
 
-    GuiDownloader(Downloader* s) : subject(s) {
+    GuiDownloader(Downloader* s, Window* w) : subject(s), window(w) {
         subject->subscribe(this);
     }
 
@@ -25,6 +26,7 @@ public:
 
 private:
     Downloader* subject;
+    Window* window;
 };
 
 

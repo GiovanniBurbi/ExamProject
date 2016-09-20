@@ -6,8 +6,10 @@
 #define PROGETTO_DOWNLOADER_H
 
 #include <list>
-#include <string>
+#include <deque>
 #include "Subject.h"
+#include "cstdio"
+
 
 class Downloader : public Subject {
 
@@ -18,14 +20,16 @@ public:
     virtual void notify() override;
 
     void downloadFiles();
-    void addFile(std::string file);
+    void addFile(FILE* file);
     unsigned long int getNumFiles() const;
+    int getTotalBytes() const;
+    int getBytes() const;
 
 
 private:
     std::list<Observer*> observers;
-    std::list<std::string> files;
-
+    std::deque<FILE*> files;
+    static bool done;
 };
 
 
