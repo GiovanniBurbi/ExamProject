@@ -13,7 +13,7 @@ void Window::setRange(int f, int b) {
 void Window::updateBar(int b) {
     gaugeFiles->SetValue(gaugeFiles->GetValue()+1);
     gaugeBytes->SetValue(gaugeBytes->GetValue()+b);
-    Refresh();
+
 }
 
 Window::Window(wxWindow *parent,Downloader* d, wxWindowID id, const wxString &title, const wxPoint &pos, const wxSize &size,
@@ -23,6 +23,14 @@ Window::Window(wxWindow *parent,Downloader* d, wxWindowID id, const wxString &ti
 
 void Window::OnClickDownload(wxCommandEvent &event) {
     downloader->downloadFiles();
+}
+
+int Window::getBytesValue() const {
+    return gaugeBytes->GetValue();
+}
+
+int Window::getFilesValue() const {
+    return gaugeFiles->GetValue();
 }
 
 

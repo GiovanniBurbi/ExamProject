@@ -17,6 +17,8 @@ public:
     void setRange (int f, int b);
     void updateBar(int b);
     virtual void OnClickDownload(wxCommandEvent &event) override;
+    int getBytesValue() const;
+    int getFilesValue() const;
 
 private:
     Downloader* downloader;

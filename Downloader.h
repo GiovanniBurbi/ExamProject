@@ -11,6 +11,7 @@
 #include "cstdio"
 
 
+
 class Downloader : public Subject {
 
 public:
@@ -24,6 +25,7 @@ public:
     unsigned long int getNumFiles() const;
     int getTotalBytes() const;
     int getBytes() const;
+    void downloadSingleFile();
 
 
 private:

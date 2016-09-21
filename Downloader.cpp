@@ -55,3 +55,9 @@ int Downloader::getBytes() const {
     fseek(*files.begin(),0,SEEK_END);
     return ftell(*files.begin());
 }
+
+void Downloader::downloadSingleFile() {
+    notify();
+    fclose(*files.begin());
+    files.pop_front();
+}
