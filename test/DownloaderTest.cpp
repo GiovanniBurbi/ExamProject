@@ -4,6 +4,8 @@
 #include <gtest/gtest.h>
 #include "../Downloader.h"
 #include "../GuiDownloader.h"
+#include "wx/wx.h"
+
 
 
 
@@ -41,30 +43,5 @@ TEST(Downloader, TestGetByte){
     file2=fopen("/home/giovanni/ClionProjects/Progetto/File2.txt","r");
     dload.addFile(file2);
     ASSERT_EQ(194,dload.getTotalBytes());
-
-}
-
-TEST(Downloader, TestObserver){
-    Downloader dload;
-    Window *window = new Window(NULL, &dload);
-    GuiDownloader gui(&dload, window);
-
-    FILE *file1;
-    file1 = fopen("/home/giovanni/ClionProjects/Progetto/File1.txt", "r");
-    dload.addFile(file1);
-    FILE *file2;
-    file2 = fopen("/home/giovanni/ClionProjects/Progetto/File2.txt", "r");
-    dload.addFile(file2);
-    ASSERT_EQ(194,dload.getTotalBytes());
-
-    dload.downloadSingleFile();
-
-    ASSERT_EQ(135,window->getBytesValue());
-    ASSERT_EQ(1,window->getFilesValue());
-
-    dload.downloadSingleFile();
-
-    ASSERT_EQ(194,window->getBytesValue());
-    ASSERT_EQ(2,window->getFilesValue());
 
 }
